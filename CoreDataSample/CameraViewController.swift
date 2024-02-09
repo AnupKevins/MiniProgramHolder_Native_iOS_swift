@@ -24,7 +24,7 @@ class CameraViewController: UIViewController, WKNavigationDelegate {
         webView.uiDelegate = self
         view.addSubview(webView)
   
-        if let url = URL(string: "https://172.20.10.6:3001") {
+        if let url = URL(string: "http://127.0.0.1:5500/index.html") {
             let request = URLRequest(url: url)
             DispatchQueue.main.async { [weak self] in
                 self?.webView.load(request)

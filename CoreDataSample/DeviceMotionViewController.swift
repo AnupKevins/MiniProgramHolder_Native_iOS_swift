@@ -25,7 +25,7 @@ class DeviceMotionViewController: UIViewController, WKNavigationDelegate {
         webView.uiDelegate = self
         view.addSubview(webView)
   
-        if let url = URL(string: "https://172.20.10.6:3004") {
+        if let url = URL(string: "https://172.20.10.6:3000") {
             let request = URLRequest(url: url)
             DispatchQueue.main.async { [weak self] in
                 self?.webView.load(request)

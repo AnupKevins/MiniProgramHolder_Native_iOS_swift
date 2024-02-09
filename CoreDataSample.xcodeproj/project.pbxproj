@@ -11,9 +11,12 @@
 		364AE12A2B73920B009AEC50 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364AE1292B73920B009AEC50 /* NetworkViewController.swift */; };
 		364AE12C2B73B288009AEC50 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364AE12B2B73B288009AEC50 /* BluetoothViewController.swift */; };
 		3682840F2B7251A4007C392A /* GeoLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3682840E2B7251A4007C392A /* GeoLocationViewController.swift */; };
+		3699E7002B74F7930052AD60 /* EventListenerGeoLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3699E6FF2B74F7930052AD60 /* EventListenerGeoLocationViewController.swift */; };
 		369A71BC2B734D0600E35E60 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369A71BB2B734D0600E35E60 /* CameraViewController.swift */; };
 		36DA99692B70DE9C0032A67D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DA99682B70DE9C0032A67D /* BluetoothManager.swift */; };
 		36DA996B2B70DF630032A67D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DA996A2B70DF630032A67D /* LocationManager.swift */; };
+		36F886242B7620B900731638 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F886232B7620B900731638 /* CoreBluetooth.framework */; };
+		36F886262B76270C00731638 /* EventListenerBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F886252B76270C00731638 /* EventListenerBluetoothViewController.swift */; };
 		8F90FAB8259B065200F3D9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90FAB7259B065200F3D9B1 /* AppDelegate.swift */; };
 		8F90FABC259B065200F3D9B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90FABB259B065200F3D9B1 /* ViewController.swift */; };
 		8F90FABF259B065200F3D9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F90FABD259B065200F3D9B1 /* Main.storyboard */; };
@@ -54,9 +57,12 @@
 		364AE1292B73920B009AEC50 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 		364AE12B2B73B288009AEC50 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
 		3682840E2B7251A4007C392A /* GeoLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationViewController.swift; sourceTree = "<group>"; };
+		3699E6FF2B74F7930052AD60 /* EventListenerGeoLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListenerGeoLocationViewController.swift; sourceTree = "<group>"; };
 		369A71BB2B734D0600E35E60 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		36DA99682B70DE9C0032A67D /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		36DA996A2B70DF630032A67D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		36F886232B7620B900731638 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		36F886252B76270C00731638 /* EventListenerBluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListenerBluetoothViewController.swift; sourceTree = "<group>"; };
 		8F90FAB4259B065200F3D9B1 /* CoreDataSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F90FAB7259B065200F3D9B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F90FABB259B065200F3D9B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F886242B7620B900731638 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36F886222B7620B900731638 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36F886232B7620B900731638 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F90FAAB259B065200F3D9B1 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +130,7 @@
 				8F90FAD0259B065400F3D9B1 /* CoreDataSampleTests */,
 				8F90FADB259B065400F3D9B1 /* CoreDataSampleUITests */,
 				8F90FAB5259B065200F3D9B1 /* Products */,
+				36F886222B7620B900731638 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +154,8 @@
 				364AE1292B73920B009AEC50 /* NetworkViewController.swift */,
 				364AE1272B737B1C009AEC50 /* DeviceMotionViewController.swift */,
 				3682840E2B7251A4007C392A /* GeoLocationViewController.swift */,
+				3699E6FF2B74F7930052AD60 /* EventListenerGeoLocationViewController.swift */,
+				36F886252B76270C00731638 /* EventListenerBluetoothViewController.swift */,
 				369A71BB2B734D0600E35E60 /* CameraViewController.swift */,
 				36DA99682B70DE9C0032A67D /* BluetoothManager.swift */,
 				36DA996A2B70DF630032A67D /* LocationManager.swift */,
@@ -338,7 +356,9 @@
 				364AE1282B737B1C009AEC50 /* DeviceMotionViewController.swift in Sources */,
 				364AE12C2B73B288009AEC50 /* BluetoothViewController.swift in Sources */,
 				369A71BC2B734D0600E35E60 /* CameraViewController.swift in Sources */,
+				36F886262B76270C00731638 /* EventListenerBluetoothViewController.swift in Sources */,
 				8F90FAB8259B065200F3D9B1 /* AppDelegate.swift in Sources */,
+				3699E7002B74F7930052AD60 /* EventListenerGeoLocationViewController.swift in Sources */,
 				36DA99692B70DE9C0032A67D /* BluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

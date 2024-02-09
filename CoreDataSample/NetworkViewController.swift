@@ -24,7 +24,7 @@ class NetworkViewController: UIViewController, WKNavigationDelegate {
         webView.uiDelegate = self
         view.addSubview(webView)
   
-        if let url = URL(string: "https://172.20.10.6:3002") {
+        if let url = URL(string: "https://172.20.10.6:3001") {
             let request = URLRequest(url: url)
             DispatchQueue.main.async { [weak self] in
                 self?.webView.load(request)

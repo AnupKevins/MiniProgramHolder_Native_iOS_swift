@@ -67,7 +67,18 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
+    
+    @IBAction func eventListenerGeolocationClick(_ sender: Any) {
+        let vc = EventListenerGeoLocationViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
 
+    @IBAction func eventListenerBluetoothClick(_ sender: Any) {
+        let vc = EventListenerBluetoothViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
 }
 
 

@@ -3,6 +3,8 @@ import CoreBluetooth
 class BluetoothManager: NSObject, CBCentralManagerDelegate {
 
     private var centralManager: CBCentralManager!
+    var bluetoothName = ""
+    var bluetoothNumber = NSNumber(integerLiteral: 0)
 
     override init() {
         super.init()
@@ -36,7 +38,13 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate {
     }
 
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        print("Discovered Peripheral: \(peripheral.name ?? "Unknown")")
+        
+        if peripheral.name?.isEmpty == false {
+            print("Discovered Peripheral: \(peripheral.name ?? "Unknown")")
+            bluetoothName = peripheral.name ?? "Unknown"
+            bluetoothNumber = RSSI.intValue as NSNumber
+        }
+        
         // You can perform further actions with the discovered peripheral
     }
 }
