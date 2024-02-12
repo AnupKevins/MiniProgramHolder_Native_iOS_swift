@@ -27,7 +27,7 @@ class EventListenerBluetoothViewController: UIViewController, WKNavigationDelega
         view.addSubview(webView)
         
         
-        if let url = URL(string: "https://172.20.10.6:3001") {
+        if let url = URL(string: "https://172.20.10.6:3000") {
             let request = URLRequest(url: url)
             DispatchQueue.main.async { [weak self] in
                 self?.webView.load(request)
@@ -95,12 +95,22 @@ extension EventListenerBluetoothViewController: WKScriptMessageHandler {
         callJavaScriptFunction()
     }
     
+//    private val bluetoothCallback = { btData: String ->
+//            "javascript:handleBluetoothData('${btData}')"
+//        }
+    
+    func bluetoothCallBack(btData: String) -> String {
+        return "javascript:handleBluetoothData('\(btData)')"
+    }
+    
     // Function to call JavaScript from Swift
         func callJavaScriptFunction() {
             
             guard let bluetoothManager = bluetoothManager else { return  }
             
-            let javascriptFunction = "(function() { var evt = new CustomEvent(\"MyEventType\", {detail: \"\(bluetoothManager.bluetoothName)|\(bluetoothManager.bluetoothNumber)\"});\nwindow.dispatchEvent(evt); })();"
+//            let javascriptFunction = "(function() { var evt = new CustomEvent(\"MyEventType\", {detail: \"\(bluetoothManager.bluetoothName)|\(bluetoothManager.bluetoothNumber)\"});\nwindow.dispatchEvent(evt); })();"
+            
+            let javascriptFunction = bluetoothCallBack(btData: "\(bluetoothManager.bluetoothName)|\(bluetoothManager.bluetoothNumber)")
             
             webView.evaluateJavaScript(javascriptFunction) { (result, error) in
                 if let error = error {
