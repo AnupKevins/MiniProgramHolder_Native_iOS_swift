@@ -70,7 +70,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtR-vV-iwo">
                                 <rect key="frame" x="20" y="372" width="374" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <state key="normal" title="Event Listener GeoLocation">
+                                <state key="normal">
                                     <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
@@ -80,7 +80,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKL-Yj-XAk">
                                 <rect key="frame" x="20" y="422" width="374" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <state key="normal" title="Event Listener using Native Bluetooth">
+                                <state key="normal" title=" Native Bluetooth Location">
                                     <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>

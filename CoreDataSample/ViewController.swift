@@ -18,10 +18,6 @@ class ViewController: UIViewController {
               return vc
        }
     
-  //  var locationManager: LocationManager!
-
-    //@IBOutlet weak var imgView:UIImageView!
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -69,125 +65,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func eventListenerGeolocationClick(_ sender: Any) {
-        let vc = EventListenerGeoLocationViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = EventListenerGeoLocationViewController()
+//        self.navigationController?.pushViewController(vc, animated: true)
         
     }
 
     @IBAction func eventListenerBluetoothClick(_ sender: Any) {
-        let vc = EventListenerBluetoothViewController()
+        let vc = EventListenerViewController()
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
 }
-
-
-//import Foundation
-//import UIKit
-//import WebKit
-//import CoreLocation
-//
-//class ViewController: UIViewController, WKNavigationDelegate {
-//
-//    var webView: WKWebView!
-//    
-//    //var bluetoothManager: BluetoothManager!
-//  //  var locationManager: LocationManager!
-//
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Create WKWebView
-//        webView = WKWebView(frame: view.bounds)
-//        webView.navigationDelegate = self
-//        view.addSubview(webView)
-//        
-//       
-//       // bluetoothManager = BluetoothManager()
-//      //  openCamera()
-//        // Load URL172.20.10.6
-//        if let url = URL(string: "http://172.20.10.6:3000") {
-//            let request = URLRequest(url: url)
-//            webView.load(request)
-//        }
-//        
-////        if let url = URL(string: "https://172.20.10.6:3000") {
-////            UIApplication.shared.open(url)
-////        }
-//    }
-//    
-////    override func viewDidAppear(_ animated: Bool) {
-////        super.viewDidAppear(animated)
-////        
-////        locationManager = LocationManager()
-////        locationManager.startUpdatingLocation()
-////        
-////        
-////    }
-////
-////    func openCamera() {
-////            if UIImagePickerController.isSourceTypeAvailable(.camera) {
-////                let imagePicker = UIImagePickerController()
-////                imagePicker.delegate = self
-////                imagePicker.sourceType = .camera
-////                imagePicker.allowsEditing = false
-////                present(imagePicker, animated: true, completion: nil)
-////            } else {
-////                print("Camera not available.")
-////            }
-////        }
-//
-////        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-////            if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-////                imageView.image = pickedImage
-////            }
-////
-////            dismiss(animated: true, completion: nil)
-////        }
-//
-////        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-////            dismiss(animated: true, completion: nil)
-////        }
-//    // Optional: Implement WKNavigationDelegate methods if needed
-//    
-//    
-//    
-//    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-//        print("...212...\(error)")
-//    }
-//    
-////    func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-////            guard let serverTrust = challenge.protectionSpace.serverTrust else { return completionHandler(.useCredential, nil) }
-////            let exceptions = SecTrustCopyExceptions(serverTrust)
-////            SecTrustSetExceptions(serverTrust, exceptions)
-////            completionHandler(.useCredential, URLCredential(trust: serverTrust))
-////        }
-//}
-//
-//extension ViewController: CLLocationManagerDelegate {
-//
-//    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-//        if #available(iOS 14.0, *) {
-//            switch manager.authorizationStatus {
-//            case .authorizedWhenInUse, .authorizedAlways:
-//                print("Location access granted.")
-//                locationManager.startUpdatingLocation()
-//                
-//            case .denied:
-//                print("Location access denied.")
-//                
-//            case .notDetermined:
-//                print("Location access not determined.")
-//                
-//            case .restricted:
-//                print("Location access restricted.")
-//                
-//            default:
-//                break
-//            }
-//        } else {
-//            // Fallback on earlier versions
-//        }
-//    }
-//}
