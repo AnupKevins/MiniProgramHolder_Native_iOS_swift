@@ -27,15 +27,6 @@ class ViewController: UIViewController {
 
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-            super.viewDidAppear(animated)
-    
-//            locationManager = LocationManager()
-//            locationManager.startUpdatingLocation()
-    
-    
-        }
-
     @IBAction func cameraClick(_ sender: Any) {
         let vc = CameraViewController()
         self.navigationController?.pushViewController(vc, animated: true)

@@ -39,33 +39,177 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DD251874-7685-463A-84E3-B4CF7C4C37E3"
+            uuid = "89D1E429-0F46-4F5D-87E4-E1533AB2B67D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreDataSample/LocationManager.swift"
+            filePath = "CoreDataSample/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "locationManager(_:didFailWithError:)"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "getCurrentWiFiInfo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "89D1E429-0F46-4F5D-87E4-E1533AB2B67D - 8eda18330af2f489"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataSample.NetworkManager.getCurrentWiFiInfo() -&gt; ()"
+                  moduleName = "CoreDataSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anupsahu/Documents/iOSProjectsDemo/CoreData/CoreDataSample/CoreDataSample/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "1916">
+               </Location>
+               <Location
+                  uuid = "89D1E429-0F46-4F5D-87E4-E1533AB2B67D - 8eda18330af2f489"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataSample.NetworkManager.getCurrentWiFiInfo() -&gt; ()"
+                  moduleName = "CoreDataSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anupsahu/Documents/iOSProjectsDemo/CoreData/CoreDataSample/CoreDataSample/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BED89AF-9651-4282-BB02-1C5555D8877D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataSample/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "getCurrentWiFiInfo()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ED6B942E-DB23-4783-BFBD-98DB12311766"
+            uuid = "783EEF8B-091E-441C-9511-905E5455E13F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreDataSample/LocationManager.swift"
+            filePath = "CoreDataSample/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "locationManager(_:didUpdateLocations:)"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "getCurrentWiFiInfo()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C93F901-BA6D-48FB-A934-9D216D38888F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataSample/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "getCurrentWiFiInfo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9C93F901-BA6D-48FB-A934-9D216D38888F - 8eda18330af2f76e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataSample.NetworkManager.getCurrentWiFiInfo() -&gt; ()"
+                  moduleName = "CoreDataSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anupsahu/Documents/iOSProjectsDemo/CoreData/CoreDataSample/CoreDataSample/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "2208">
+               </Location>
+               <Location
+                  uuid = "9C93F901-BA6D-48FB-A934-9D216D38888F - 8eda18330af2f76e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataSample.NetworkManager.getCurrentWiFiInfo() -&gt; ()"
+                  moduleName = "CoreDataSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anupsahu/Documents/iOSProjectsDemo/CoreData/CoreDataSample/CoreDataSample/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A5EEF6C-1E86-489C-8CEA-DF6B14011D97"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataSample/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "getCurrentWiFiInfo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2A5EEF6C-1E86-489C-8CEA-DF6B14011D97 - 8eda18330af2f74f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataSample.NetworkManager.getCurrentWiFiInfo() -&gt; ()"
+                  moduleName = "CoreDataSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anupsahu/Documents/iOSProjectsDemo/CoreData/CoreDataSample/CoreDataSample/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "2288">
+               </Location>
+               <Location
+                  uuid = "2A5EEF6C-1E86-489C-8CEA-DF6B14011D97 - 8eda18330af2f74f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataSample.NetworkManager.getCurrentWiFiInfo() -&gt; ()"
+                  moduleName = "CoreDataSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anupsahu/Documents/iOSProjectsDemo/CoreData/CoreDataSample/CoreDataSample/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "540">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

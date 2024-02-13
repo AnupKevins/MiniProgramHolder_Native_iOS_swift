@@ -11,6 +11,7 @@ class EventListenerViewController: UIViewController, WKNavigationDelegate {
     var bluetoothManager: BluetoothManager?
     var locationManager : LocationManager?
     var motionManager: CMMotionManager?
+    var networkManager: NetworkManager?
     var accelerationXaxis: Double = 0.0
     var accelerationYaxis: Double = 0.0
     
@@ -20,6 +21,7 @@ class EventListenerViewController: UIViewController, WKNavigationDelegate {
         bluetoothManager = BluetoothManager()
         locationManager = LocationManager()
         motionManager = CMMotionManager()
+        networkManager = NetworkManager()
         
         // To check device motion
         self.deviceMotionHandler()
@@ -53,6 +55,8 @@ class EventListenerViewController: UIViewController, WKNavigationDelegate {
         // Stop device motion updates when the view is about to disappear
         motionManager?.stopDeviceMotionUpdates()
         motionManager = nil
+        networkManager?.stopMonitoring()
+        networkManager = nil
     }
     
     @available(iOS 15.0, *)
@@ -109,6 +113,8 @@ extension EventListenerViewController: WKScriptMessageHandler {
             
         } else if body == "iOS_DeviceMotion" {
             sendDeviceMotionUpdate()
+        } else if body == "iOS_Network" {
+            sendNetworkUpdate()
         }
     }
     
@@ -238,9 +244,42 @@ extension EventListenerViewController {
     // Function to call JavaScript from Swift
     func callDeviceMotionJavaScriptFunction() {
         
-        guard let bluetoothManager = bluetoothManager else { return  }
-        
         let javascriptFunction = deviceMotionCallBack(deviceMotionData: "User Acceleration X: \(accelerationXaxis)|User Acceleration Y: \(accelerationYaxis)")
+        
+        webView.evaluateJavaScript(javascriptFunction) { (result, error) in
+            if let error = error {
+                print("Error calling JavaScript: \(error)")
+            } else {
+                print("JavaScript function called successfully \(result)")
+            }
+        }
+    }
+}
+
+//  For Network Info
+extension EventListenerViewController {
+    func sendNetworkUpdate() {
+        callNetworkJavaScriptFunction()
+    }
+    
+    
+    func networkCallBack(networkData: String) -> String {
+        return "javascript:handleNetworkData('\(networkData)')"
+    }
+    
+    // Function to call JavaScript from Swift
+    func callNetworkJavaScriptFunction() {
+        guard let networkManager = networkManager else { return  }
+        
+        var javascriptFunction = ""
+        
+        if networkManager.ssid.isEmpty == false {
+            javascriptFunction = networkCallBack(
+                networkData: "Network Name: \(networkManager.networkType)| Wifi SSID: \(networkManager.ssid)| Wifi BSSID: \(networkManager.bssid)"
+            )
+        } else {
+            javascriptFunction = networkCallBack(networkData: "Network Name: \(networkManager.networkType)")
+        }
         
         webView.evaluateJavaScript(javascriptFunction) { (result, error) in
             if let error = error {

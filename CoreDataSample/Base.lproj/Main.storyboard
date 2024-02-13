@@ -80,7 +80,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKL-Yj-XAk">
                                 <rect key="frame" x="20" y="422" width="374" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                <state key="normal" title=" Native Bluetooth Location">
+                                <state key="normal" title=" Native Bluetooth Location Motion Network">
                                     <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
