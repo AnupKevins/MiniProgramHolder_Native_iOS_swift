@@ -18,14 +18,6 @@ class EventListenerViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bluetoothManager = BluetoothManager()
-        locationManager = LocationManager()
-        motionManager = CMMotionManager()
-        networkManager = NetworkManager()
-        
-        // To check device motion
-        self.deviceMotionHandler()
-        
         let config = WKWebViewConfiguration()
         let contentController = WKUserContentController()
         
@@ -46,6 +38,18 @@ class EventListenerViewController: UIViewController, WKNavigationDelegate {
                 self?.webView.load(request)
             }
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+        bluetoothManager = BluetoothManager()
+        locationManager = LocationManager()
+        motionManager = CMMotionManager()
+        networkManager = NetworkManager()
+        
+        // To check device motion
+        self.deviceMotionHandler()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -115,6 +119,12 @@ extension EventListenerViewController: WKScriptMessageHandler {
             sendDeviceMotionUpdate()
         } else if body == "iOS_Network" {
             sendNetworkUpdate()
+        } else if body == "iOS_OpenCamera" {
+            openCamera()
+        } else if body == "iOS_OpenPhotos" {
+            openPhotoGallery()
+        } else if body == "iOS_Back" {
+            self.navigationController?.popViewController(animated: true)
         }
     }
     
