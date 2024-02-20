@@ -111,10 +111,8 @@ extension EventListenerViewController: WKScriptMessageHandler {
         
         if body == "iOS_Bluetooth" {
             sendBluetoothUpdate()
-            
         } else if body == "iOS_Location" {
             sendLocationUpdate()
-            
         } else if body == "iOS_DeviceMotion" {
             sendDeviceMotionUpdate()
         } else if body == "iOS_Network" {
