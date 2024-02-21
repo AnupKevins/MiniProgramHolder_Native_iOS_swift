@@ -15,6 +15,7 @@
 		36D45C042B7B6E9800ECF365 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D45C032B7B6E9800ECF365 /* NetworkManager.swift */; };
 		36DA99692B70DE9C0032A67D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DA99682B70DE9C0032A67D /* BluetoothManager.swift */; };
 		36DA996B2B70DF630032A67D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DA996A2B70DF630032A67D /* LocationManager.swift */; };
+		36DCC4912B85F97300AA1D68 /* ExtensionsCameraEventListenerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DCC4902B85F97300AA1D68 /* ExtensionsCameraEventListenerController.swift */; };
 		36F886242B7620B900731638 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F886232B7620B900731638 /* CoreBluetooth.framework */; };
 		36F886262B76270C00731638 /* EventListenerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F886252B76270C00731638 /* EventListenerViewController.swift */; };
 		8F90FAB8259B065200F3D9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90FAB7259B065200F3D9B1 /* AppDelegate.swift */; };
@@ -54,7 +55,6 @@
 
 /* Begin PBXFileReference section */
 		363CE27A2B84A91F001C015A /* CameraCapacitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCapacitorViewController.swift; sourceTree = "<group>"; };
-		363CE27D2B84A944001C015A /* ExtensionsCameraEventListenerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsCameraEventListenerController.swift; sourceTree = "<group>"; };
 		364AE1272B737B1C009AEC50 /* DeviceMotionCpacitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotionCpacitorViewController.swift; sourceTree = "<group>"; };
 		364AE1292B73920B009AEC50 /* NetworkCapacitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCapacitorViewController.swift; sourceTree = "<group>"; };
 		364AE12B2B73B288009AEC50 /* BluetoothCapacitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCapacitorViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +63,7 @@
 		36D45C072B7B873800ECF365 /* CoreDataSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreDataSample.entitlements; sourceTree = "<group>"; };
 		36DA99682B70DE9C0032A67D /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		36DA996A2B70DF630032A67D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		36DCC4902B85F97300AA1D68 /* ExtensionsCameraEventListenerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsCameraEventListenerController.swift; sourceTree = SOURCE_ROOT; };
 		36F886232B7620B900731638 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		36F886252B76270C00731638 /* EventListenerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListenerViewController.swift; sourceTree = "<group>"; };
 		8F90FAB4259B065200F3D9B1 /* CoreDataSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +133,7 @@
 		363CE27C2B84A944001C015A /* EventListener */ = {
 			isa = PBXGroup;
 			children = (
-				363CE27D2B84A944001C015A /* ExtensionsCameraEventListenerController.swift */,
+				36DCC4902B85F97300AA1D68 /* ExtensionsCameraEventListenerController.swift */,
 				36F886252B76270C00731638 /* EventListenerViewController.swift */,
 			);
 			path = EventListener;
@@ -386,6 +387,7 @@
 				364AE12C2B73B288009AEC50 /* BluetoothCapacitorViewController.swift in Sources */,
 				36D45C042B7B6E9800ECF365 /* NetworkManager.swift in Sources */,
 				36F886262B76270C00731638 /* EventListenerViewController.swift in Sources */,
+				36DCC4912B85F97300AA1D68 /* ExtensionsCameraEventListenerController.swift in Sources */,
 				8F90FAB8259B065200F3D9B1 /* AppDelegate.swift in Sources */,
 				36DA99692B70DE9C0032A67D /* BluetoothManager.swift in Sources */,
 			);
